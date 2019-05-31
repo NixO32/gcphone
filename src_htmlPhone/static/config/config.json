@@ -1,5 +1,5 @@
 {
-  "reseau": "Gannon",
+  "reseau": "VietnamPhone",
   "warningMessageCount": 250,
   "themeColor": "#303f9f",
   "colors": [
@@ -62,21 +62,16 @@
   },
 
 
-  "serviceCall": [{
+  "serviceCall": [
+    {
       "display": "Police",
-      "icon": "/html/static/img/icons_app/police.png",
-      "subMenu": [{
-          "title": "Envoyer un message",
+      "backgroundColor": "blue",
+      "subMenu": [
+        {
+          "title": "Poslat Zprávu",
           "eventName": "esx_addons_gcphone:call",
           "type": {
             "number": "police"
-          }
-        },
-        {
-          "title": "Appeler le standard",
-          "eventName": "gcphone:autoCallNumber",
-          "type": {
-            "number": "911"
           }
         }
       ]
@@ -84,26 +79,41 @@
     {
       "display": "Ambulance",
       "backgroundColor": "red",
-      "subMenu": [{
-        "title": "Envoyer un message",
-        "eventName": "esx_addons_gcphone:call",
-        "type": {
-          "number": "ambulance"
+      "subMenu": [
+        {
+          "title": "Poslat Zprávu",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "ambulance"
+          }
         }
-      }]
-    }
-  ],
-
-  "defaultContacts": [{
-      "number": "ambulance",
-      "display": "Ambulance",
-      "icon": "/html/static/img/icons_app/bank.png"
+      ]
     },
     {
-      "number": "police",
-      "display": "Police",
-      "backgroundColor": "blue",
-      "letter": "P"
+      "display": "Taxi",
+      "backgroundColor": "yellow",
+      "subMenu": [
+        {
+          "title": "Poslat Zprávu",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "taxi"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Mechanic",
+      "backgroundColor": "green",
+      "subMenu": [
+        {
+          "title": "Poslat Zprávu",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "mechanic"
+          }
+        }
+      ]
     }
   ],
 
